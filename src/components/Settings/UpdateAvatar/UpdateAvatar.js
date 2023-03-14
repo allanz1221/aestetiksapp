@@ -21,7 +21,7 @@ export function UpdateAvatar(props) {
       quality: 1,
     });
 
-    if (!result.cancelled) updateAvatar(result.uri);
+    if (!result.canceled) updateAvatar(result.assets[0].uri);
   };
 
   const updateAvatar = async (imageUri) => {

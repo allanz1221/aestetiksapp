@@ -15,8 +15,8 @@ export function VideoData(props) {
       quality: 1,
     });
 
-    if (!result.cancelled) {
-      formik.setFieldValue("imageUri", result.uri);
+    if (!result.canceled) {
+      formik.setFieldValue("imageUri", result.assets[0].uri);
     }
   };
 

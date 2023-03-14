@@ -17,13 +17,16 @@ export function UploadScreen(props) {
           quality: 1,
         });
 
-        if (result.cancelled) {
+        if (result.canceled) {
           navigation.goBack();
         } else {
           navigation.navigate(screen.upload.publishVideo, {
-            videoUri: result.uri,
+            videoUri: result.assets[0].uri,
           });
         }
+
+
+        
       })();
     }, [])
   );

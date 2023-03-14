@@ -1,9 +1,9 @@
-const SERVER_IP = "127.0.0.1:8000";
+const SERVER_IP = "allanz.pythonanywhere.com";
 // const SERVER_IP = "tintok-tincode.herokuapp.com";
 
 export const ENV = {
-  BASE_PATH: `http://${SERVER_IP}`,
-  BASE_API: `http://${SERVER_IP}/api`,
+  BASE_PATH: `https://${SERVER_IP}`,
+  BASE_API: `https://${SERVER_IP}/api`,
   API_ROUTES: {
     REGISTER: "auth/register",
     LOGIN: "auth/login",
